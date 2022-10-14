@@ -46,10 +46,10 @@ const Contact = () => {
 					<div className='contact__options'>
 						<article className='contact__option'>
 							<BiMap className='contact__option-icon' />
-							<h4>Ubicacion</h4>
+							<h4>Ubicación</h4>
 							<h5>Buenos Aires, Argentina.</h5>
 							<a
-								href='https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6299298,-58.6010142,12z/data=!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591'
+								href='https://goo.gl/maps/79RaGLpAiAqF8ytd9'
 								target='_blank'
 								rel='noopener noreferrer'
 							>

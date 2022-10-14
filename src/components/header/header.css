@@ -116,20 +116,13 @@
 	color: #008cff;
 }
 
-.header__socials::before {
-	content: "";
-	width: 5rem;
-	height: 2px;
-	background-color: #008cff;
-}
-
 /*==== ME ====*/
 .header__img {
 	z-index: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
+	width: 60%;
 }
 
 .header__img img {

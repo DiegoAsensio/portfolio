@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&display=swap");
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-position: center;
+	background-color: #000000;
+	-webkit-clip-path: circle(75% at right 100%);
+	clip-path: circle(75% at right 100%);
+	filter: grayscale(75%);
+}
+
+#portfolio {
+	min-height: 90vh;
+	max-height: 90%;
+	background: #1a1a1a;
+	padding-top: 3rem;
+	width: 100%;
+}
+
+.portfolio__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.p-dark span {
+	font-size: 25rem;
+	font-family: "Black Han Sans", sans-serif;
+	padding: 30px 10px;
+	position: absolute;
+	left: 0;
+	bottom: 20%;
+	color: rgba(255, 255, 255, 0.184);
+}
+
+.portfolio__item {
+	position: relative;
+	height: 800px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.p-dark {
+	background: rgb(66, 66, 66);
+	background: radial-gradient(
+		circle,
+		rgba(66, 66, 66, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.p-blue {
+	background: rgb(34, 31, 93);
+	background: radial-gradient(
+		circle,
+		rgba(34, 31, 93, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.p-yellow {
+	background: rgb(255, 228, 74);
+	background: radial-gradient(
+		circle,
+		rgba(255, 228, 74, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.portfolio__slider {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 40%;
+}
+
+.portfolio__slider .img1 {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.portfolio__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 40%;
+	padding: 10px;
+}
+
+.dark h3 {
+	color: #fff;
+	font-size: 5rem;
+	font-family: "Bebas Neue", cursive;
+}
+
+.dark p {
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 10px 0px;
+	padding-right: 30px;
+	font-family: "Bebas Neue", cursive;
+}
+
+.light h3 {
+	color: #000000;
+	font-size: 5rem;
+	font-family: "Bebas Neue", cursive;
+}
+
+.light p {
+	color: #000000;
+	font-size: 1.3rem;
+	padding: 10px 0px;
+	font-family: "Bebas Neue", cursive;
+}
+
+.portfolio__btn {
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	width: 250px;
+}
+
+.btn-link {
+	background-color: #fff;
+	color: #000;
+	padding: 10px;
+	width: 250px;
+	margin-top: 10px;
+	border-radius: 0.3rem;
+	z-index: 2;
+}
+
+.btn-link:hover {
+	color: #fff;
+	outline: 1px solid #fff;
+	background-color: transparent;
+}
+
+/*==== MEDIA QUERIES (MEDIUM DEVICES) ====*/
+
+@media screen and (max-width: 1024px) {
+	.portfolio__item {
+		height: 1000px;
+	}
+
+	.portfolio__content {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.portfolio__item {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.p-dark span {
+		font-size: 20rem;
+		bottom: 50%;
+	}
+
+	.portfolio__content {
+		width: 90%;
+	}
+
+	.circle {
+		display: none;
+	}
+
+	.portfolio__slider {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.p-dark span {
+		font-size: 12rem;
+		bottom: 60%;
+	}
+
+	.portfolio__container {
+		grid-template-columns: 1fr;
+	}
+
+	.dark p {
+		font-size: 1.1rem;
+	}
+
+	.p-yellow {
+		background: rgb(145, 132, 58);
+		background: radial-gradient(
+			circle,
+			rgb(123, 112, 49) 0%,
+			rgba(0, 0, 0, 1) 100%
+		);
+	}
+}
