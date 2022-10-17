@@ -11,22 +11,29 @@ const Contact = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm("service_htm11it", "template_csnkimw", form.current).then(
-			(result) => {
-				console.log(result.text);
-				Swal.fire({
-					icon: "success",
-					title: "Gracias por el mensaje, me contactare pronto contigo.",
-					padding: "3em",
-					color: "#fff",
-					background: "#422c6c",
-					backdrop: `    background: rgba(238, 238, 238, 0.068) `,
-				});
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
+		emailjs
+			.sendForm(
+				"service_myavux5",
+				"template_csnkimw",
+				form.current,
+				"_MHO8uQy8U4lOi7vu"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+					Swal.fire({
+						icon: "success",
+						title: "Gracias por el mensaje, me contactare pronto contigo.",
+						padding: "3em",
+						color: "#fff",
+						background: "#422c6c",
+						backdrop: `    background: rgba(238, 238, 238, 0.068) `,
+					});
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
 		e.target.reset();
 	};
 
