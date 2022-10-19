@@ -2,6 +2,7 @@ import React from "react";
 import "./testimonials.css";
 import PER1 from "../../assets/Victoria.png";
 import PER2 from "../../assets/Paula.png";
+import PER3 from "../../assets/laura.jpg";
 import {Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -25,6 +26,13 @@ const Testimonials = () => {
 			name: "Paula Gimenez Heit - Customer Service en VN Global",
 			review:
 				"Diego trabaja muy bien en equipo, es productivo, aprende rápido y mejora sus habilidades día a día. Excelente puntualidad, responsable y amable. Fue una gran experiencia haber trabajado a su lado.",
+		},
+		{
+			id: 2,
+			avatar: PER3,
+			name: "Laura Asensi - DevOps Engineer en EY",
+			review:
+				"I had the pleasure of working with Diego and he has always shown willingness to help and learn. He has worked in quality projects, and he is a very quick learner. A great team member!",
 		},
 	];
 
