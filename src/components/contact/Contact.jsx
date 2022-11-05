@@ -75,7 +75,7 @@ const Contact = () => {
 					</label>
 					<input
 						type='text'
-						name='name'
+						name='from_name'
 						placeholder='Escribe tu nombre completo'
 						required
 					/>
