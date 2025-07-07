@@ -29,13 +29,13 @@ const About = () => {
 						<article className='about__card c1'>
 							<FaAward className='about__icon' />
 							<h5>Experiencia</h5>
-							<small>1+ años trabajando</small>
+							<small>3+ años trabajando</small>
 						</article>
 
 						<article className='about__card c2'>
 							<FaFolderOpen className='about__icon' />
 							<h5>Proyectos</h5>
-							<small>4+ Proyectos Terminados</small>
+							<small>14+ Proyectos Terminados</small>
 						</article>
 					</div>
 					<p>
