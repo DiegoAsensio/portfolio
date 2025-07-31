@@ -5,11 +5,11 @@ const Portfolio = () => {
 	const workData = [
 		{
 			id: 1,
-			title: "Paisajismo Web",
-			img: "https://i.ibb.co/fdWHq2L/paisajismo.png",
+			title: "Ink Master",
+			img: "https://ibb.co/fVgk2cFJ",
 			descrip:
-				"Web realizada como proyecto final en el curso de desarrollo web en Coderhouse, la cual es una página para un miembro familiar que se dedica al paisajismo. En este proyecto encontraras, información de la persona, servicios que ofrece, una galería. El maquetado se realizó con HTML5, CSS y SASS para los estilos, Bootstrap para un mayor dinamismo, es totalmente responsive, se adapta a la pantalla de todos los dispositivos, cuenta con seo y esta optimizada.",
-			demo: "https://lghpaisajismo.000webhostapp.com/",
+				"Es una página profesional para un tatuador, donde se presenta información del artista, una galería de trabajos y una sección de contacto. El sitio fue desarrollado con HTML5, CSS3 y JavaScript para lograr interactividad y dinamismo. Es completamente responsive, se adapta a todo tipo de dispositivos, cuenta con buenas prácticas de SEO y está optimizada para una carga rápida.",
+			demo: "https://diegotatua.netlify.app/",
 			class: "p-dark portfolio__item",
 			class_item: "portfolio__content dark",
 		},
