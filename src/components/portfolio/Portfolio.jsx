@@ -6,7 +6,7 @@ const Portfolio = () => {
 		{
 			id: 1,
 			title: "Ink Master",
-			img: "https://ibb.co/fVgk2cFJ",
+			img: "https://i.ibb.co/V01gtK96/Captura-de-pantalla-2025-07-31-115014.png",
 			descrip:
 				"Es una página profesional para un tatuador, donde se presenta información del artista, una galería de trabajos y una sección de contacto. El sitio fue desarrollado con HTML5, CSS3 y JavaScript para lograr interactividad y dinamismo. Es completamente responsive, se adapta a todo tipo de dispositivos, cuenta con buenas prácticas de SEO y está optimizada para una carga rápida.",
 			demo: "https://diegotatua.netlify.app/",
