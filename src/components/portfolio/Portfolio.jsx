@@ -15,11 +15,11 @@ const Portfolio = () => {
 		},
 		{
 			id: 2,
-			title: "Perfect Shoes",
-			img: "https://i.ibb.co/cXFsJnT/shoes.png",
+			title: "My Tech",
+			img: "https://i.ibb.co/gMmNwhLx/mytech.png",
 			descrip:
-				"Web realizada como proyecto final en el curso de ReactJs en Coderhouse, el cual es un Ecommerce de calzado deportivo y urbano. En este proyecto encontraras distintos productos, se utilizó Firebase para crear la base de datos de los productos, se usaron hooks para traerlos, un carrito de compras, es totalmente responsive, se adapta a la pantalla de todos los dispositivos, cuenta con seo y esta optimizado.",
-			demo: "https://e-commerce-asensio.web.app/",
+				"Web realizada para una tienda de tecnología, es un Ecommerce de productos tecnológicos. En este proyecto encontraras distintos productos, se utilizó PHP y MySQL para crear la base de datos de los productos, un carrito de compras, es totalmente responsive, se adapta a la pantalla de todos los dispositivos, cuenta con seo y esta optimizado.",
+			demo: "https://my-tech.infinityfreeapp.com/index.php?sec=home",
 			class: "p-dark portfolio__item p-blue",
 			class_item: "portfolio__content dark",
 		},
