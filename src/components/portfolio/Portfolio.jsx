@@ -68,7 +68,7 @@ const Portfolio = () => {
 				"Web realizada como proyecto final en el curso de ReactJs en coderhouse, el cual es un Ecommerce de calzado deportivo y urbano. En este proyecto encontraras distintos productos, se utilizo firebase para crear la base de datos de los productos, se usaron hooks para traerlos, un carrito de compras, es totalmente responsive, se adapta a la pantalla de todos los dispositivos, cuenta con seo y esta optimizado.",
 			class: "p-dark portfolio__item p-yellow",
 			class_item: "portfolio__content dark",
-			technology: "React",
+			technology: "react",
 		},
 	];
 
