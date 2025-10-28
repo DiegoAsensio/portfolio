@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "./portfolio.css";
 
 const Portfolio = () => {
+	const [activeFilter, setActiveFilter] = useState("all");
+
 	const workData = [
 		{
 			id: 1,
@@ -12,6 +14,7 @@ const Portfolio = () => {
 			demo: "https://diegotatua.netlify.app/",
 			class: "p-dark portfolio__item",
 			class_item: "portfolio__content dark",
+			technology: "javascript",
 		},
 		{
 			id: 2,
@@ -22,6 +25,7 @@ const Portfolio = () => {
 			demo: "https://my-tech.infinityfreeapp.com/index.php?sec=home",
 			class: "p-dark portfolio__item p-blue",
 			class_item: "portfolio__content dark",
+			technology: "php",
 		},
 		{
 			id: 3,
@@ -32,17 +36,64 @@ const Portfolio = () => {
 			demo: "https://tiendamatienzo.netlify.app/",
 			class: "p-dark portfolio__item p-yellow",
 			class_item: "portfolio__content dark",
+			technology: "javascript",
 		},
+		{
+			id: 4,
+			title: "Historia Argentina",
+			img: "https://i.ibb.co/WW3wSR43/historia.png",
+			descrip:
+				"Se trata de una página informativa sobre la historia argentina, donde se recorre de forma clara y ordenada los principales acontecimientos desde la época colonial hasta la actualidad. El sitio está desarrollado con HTML, CSS y JavaScript, cuenta con un diseño totalmente responsive que se adapta a cualquier dispositivo, incorpora buenas prácticas de SEO para mejorar su posicionamiento y está optimizado en rendimiento y accesibilidad para ofrecer una experiencia fluida al usuario.",
+			demo: "https://historiaargentina.netlify.app/",
+			class: "p-dark portfolio__item",
+			class_item: "portfolio__content dark",
+			technology: "javascript",
+		},
+		{
+			id: 5,
+			title: "Tercer Tiempo",
+			img: "https://i.ibb.co/67t38gzQ/3t.png",
+			descrip:
+				"Web creada para una escuela de fútbol donde los profesores pueden subir los resultados de los partidos y el sistema actualiza automáticamente los puntos de cada alumno. Está conectada a la API de Google Sheets, que funciona como base de datos para almacenar y gestionar la información en tiempo real. El sitio es totalmente responsive, se adapta a todo tipo de dispositivos, y cuenta con optimización SEO y un rendimiento eficiente para garantizar una experiencia fluida e intuitiva.",
+			demo: "https://3tiempo.netlify.app/",
+			class: "p-dark portfolio__item p-blue",
+			class_item: "portfolio__content dark",
+			technology: "javascript",
+		},
+	];
+
+	const filteredWork =
+		activeFilter === "all"
+			? workData
+			: workData.filter((work) => work.technology === activeFilter);
+
+	const filters = [
+		{id: "all", label: "Todos"},
+		{id: "javascript", label: "JavaScript"},
+		{id: "react", label: "React"},
+		{id: "php", label: "PHP"},
 	];
 
 	return (
 		<section id='portfolio'>
 			<h2>Portfolio</h2>
 
-			<article className='portfolio__container'>
-				{/* SEPARACION DE PROYECTO*/}
+			<div className='portfolio__filters'>
+				{filters.map((filter) => (
+					<button
+						key={filter.id}
+						className={`filter__btn ${
+							activeFilter === filter.id ? "active" : ""
+						}`}
+						onClick={() => setActiveFilter(filter.id)}
+					>
+						{filter.label}
+					</button>
+				))}
+			</div>
 
-				{workData.map((data) => (
+			<article className='portfolio__container'>
+				{filteredWork.map((data) => (
 					<div className={data?.class} key={data?.id}>
 						<img src={data?.img} alt={data?.title} className='circle' />
 						<span className='portfolio__number'>0{data?.id}.</span>
