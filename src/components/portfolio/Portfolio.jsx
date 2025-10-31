@@ -71,6 +71,18 @@ const Portfolio = () => {
 			class_item: "portfolio__content dark",
 			technology: "react",
 		},
+
+		{
+			id: 6,
+			title: "Music Visualizer",
+			img: "https://i.ibb.co/NdLHJsf0/music.png",
+			descrip:
+				"Es una aplicación web que analiza archivos de audio en tiempo real y los transforma en experiencias visuales inmersivas. Desarrollada con React y la Web Audio API, procesa las frecuencias del audio mediante AnalyserNode y las representa a través de cuatro modos de visualización distintos: espectro de barras con gradientes, visualización circular radial, ondas sinusoidales y un sistema de partículas interconectadas. Utiliza Canvas API para el renderizado eficiente de animaciones fluidas a 60 FPS.",
+			demo: "https://visualizemusic.netlify.app/",
+			class: "p-dark portfolio__item",
+			class_item: "portfolio__content dark",
+			technology: "react",
+		},
 	];
 
 	const filteredWork =
