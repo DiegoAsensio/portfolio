@@ -73,7 +73,7 @@ const Portfolio = () => {
 		},
 
 		{
-			id: 6,
+			id: 7,
 			title: "Music Visualizer",
 			img: "https://i.ibb.co/NdLHJsf0/music.png",
 			descrip:
