@@ -71,7 +71,6 @@ const Portfolio = () => {
 			class_item: "portfolio__content dark",
 			technology: "react",
 		},
-
 		{
 			id: 7,
 			title: "Music Visualizer",
@@ -80,6 +79,17 @@ const Portfolio = () => {
 				"Es una aplicación web que analiza archivos de audio en tiempo real y los transforma en experiencias visuales inmersivas. Desarrollada con React y la Web Audio API, procesa las frecuencias del audio mediante AnalyserNode y las representa a través de cuatro modos de visualización distintos: espectro de barras con gradientes, visualización circular radial, ondas sinusoidales y un sistema de partículas interconectadas. Utiliza Canvas API para el renderizado eficiente de animaciones fluidas a 60 FPS.",
 			demo: "https://visualizemusic.netlify.app/",
 			class: "p-dark portfolio__item",
+			class_item: "portfolio__content dark",
+			technology: "react",
+		},
+		{
+			id: 8,
+			title: "Portfolio Fotógrafa",
+			img: "https://i.ibb.co/k2tF7GmX/portfolio-fotografa.png",
+			descrip:
+				"Portfolio fotográfico minimalista desarrollado con React, TypeScript y Tailwind CSS. Incluye galería interactiva con filtros por categoría, lightbox responsive, hero con carousel automático, y diseño mobile-first optimizado para rendimiento. Desplegado en Netlify con CI/CD automático.",
+			demo: "https://catadoradeframbuesas.netlify.app/",
+			class: "p-dark portfolio__item p-blue",
 			class_item: "portfolio__content dark",
 			technology: "react",
 		},
